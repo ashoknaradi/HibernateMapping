@@ -1,0 +1,10 @@
+com\Controllers\ManyToMany.class
+com\Pojos\College.class
+com\Controllers\oneToOneMain.class
+com\Pojos\Courses.class
+com\Pojos\Passport.class
+com\Controllers\oneToManyMain.class
+com\util\HibernateUtil.class
+com\Pojos\Student.class
+com\Pojos\University.class
+com\Pojos\ManyStudents.class

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+	<!-- ===============MySQL=========================== -->
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+		<property name="hibernate.connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost:3306/hibernate
+		</property>
+		<property name="hibernate.connection.username">
+			root
+		</property>
+		<property name="hibernate.connection.password">
+			root
+		</property>
+		<property name="show_sql">
+			true
+		</property>
+		<!-- List of mapping classes -->
+		<mapping class="com.Pojos.Student"/>
+		<mapping class="com.Pojos.Passport"/>
+		<mapping class="com.Pojos.College"/>
+		<mapping class="com.Pojos.University"/>
+		<mapping class="com.Pojos.Courses"/>
+		<mapping class="com.Pojos.ManyStudents"/>
+	</session-factory>
+</hibernate-configuration>
